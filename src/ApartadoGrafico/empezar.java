@@ -1,8 +1,20 @@
 package ApartadoGrafico;
 
+import Logic.Jugador;
+
 public class empezar extends javax.swing.JFrame {
 
-    public empezar() {
+    public static Jugador j1;
+    public static Jugador j2;
+    public static int posicion1;
+    public static int posicion2;
+
+    public empezar(Jugador j1, Jugador j2, int posicion1, int posicion2) {
+        this.j1 = j1;
+        this.j2 = j2;
+        this.posicion1 = posicion1;
+        this.posicion2 = posicion2;
+
         initComponents();
     }
 
@@ -42,21 +54,18 @@ public class empezar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
-       PanelPreguntas pp = new PanelPreguntas();
-       
-       pp.setVisible(true);
-       
-       
-       //recibir el tema
-       //mandar la pregunta del tema
-       //mandar las respuestas de la pregunta
-       //corregir el label de nombre
-       
-       
-       
-       
-       
-       
+
+        PanelPreguntas pp = new PanelPreguntas();
+
+        pp.setVisible(true);
+
+        //recibir el tema
+        //mandar la pregunta del tema
+        //mandar las respuestas de la pregunta
+        //corregir el label de nombre
+        pp.lblNombre.setText(j1.getNombre());
+
+
     }//GEN-LAST:event_btnStartActionPerformed
 
 

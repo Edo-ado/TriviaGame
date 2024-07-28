@@ -574,6 +574,9 @@ public class Juego {
     }
     
     
+    //sumar puntos
+    //ordenar resultados
+    // mostrar ganador
     
     
     

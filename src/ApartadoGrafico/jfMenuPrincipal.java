@@ -189,6 +189,8 @@ public class jfMenuPrincipal extends javax.swing.JFrame {
         selectorP1.setVisible(true);
         selectorP1.setLocationRelativeTo(null);
         this.dispose();
+        selectorP1.lblSeleccionadaAlias.setVisible(false);;
+     
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void btnInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInformacionActionPerformed
