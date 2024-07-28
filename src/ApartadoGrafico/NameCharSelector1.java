@@ -112,9 +112,10 @@ public class NameCharSelector1 extends javax.swing.JFrame {
         });
 
         btnListoP1.setBackground(new java.awt.Color(0, 0, 0));
-        btnListoP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        btnListoP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 24)); // NOI18N
         btnListoP1.setForeground(new java.awt.Color(255, 255, 255));
         btnListoP1.setText("Listo");
+        btnListoP1.setBorder(null);
         btnListoP1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListoP1ActionPerformed(evt);
@@ -125,6 +126,7 @@ public class NameCharSelector1 extends javax.swing.JFrame {
         btnCancelarP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
         btnCancelarP1.setForeground(new java.awt.Color(255, 255, 255));
         btnCancelarP1.setText("Cancelar");
+        btnCancelarP1.setBorder(null);
         btnCancelarP1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarP1ActionPerformed(evt);
@@ -839,9 +841,6 @@ public class NameCharSelector1 extends javax.swing.JFrame {
             jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpSelector1Layout.createSequentialGroup()
                 .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpSelector1Layout.createSequentialGroup()
-                        .addGap(743, 743, 743)
-                        .addComponent(btntAlternarOpcion))
                     .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jpSelector1Layout.createSequentialGroup()
                             .addGap(59, 59, 59)
@@ -871,10 +870,10 @@ public class NameCharSelector1 extends javax.swing.JFrame {
                     .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jpTeclado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jpSelector1Layout.createSequentialGroup()
-                            .addGap(105, 105, 105)
-                            .addComponent(btnListoP1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(153, 153, 153)
-                            .addComponent(btnCancelarP1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnListoP1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnCancelarP1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btntAlternarOpcion))
                 .addGap(71, 71, 71))
         );
         jpSelector1Layout.setVerticalGroup(
