@@ -991,6 +991,7 @@ public class NameCharSelector1 extends javax.swing.JFrame {
             j1 = new Jugador(Nombre, Alias, 0, Tema);
 
             NameCharSelector2 selector2 = new NameCharSelector2(j1, posicion);
+            selector2.lblSeleccionadaAlias.setVisible(false);;
             selector2.setVisible(true);
             selector2.setLocationRelativeTo(null);
             this.dispose();
