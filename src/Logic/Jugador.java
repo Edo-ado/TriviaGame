@@ -2,23 +2,27 @@ package Logic;
 
 public class Jugador {
 
-    private String nombre,nombre2;
+    private String nombre;
 
-    private int puntaje,puntaje2;
+    private int puntaje;
 
-    private String tema,tema2;
+    private int tema;
+
+    private String alias;
 
     public Jugador() {
 
     }
 
-    public Jugador(String nombre, String nombre2, int puntaje, int puntaje2, String tema, String tema2) {
+    public Jugador(String nombre, String alias, int puntaje, int tema) {
         this.nombre = nombre;
-        this.nombre2 = nombre2;
+
+        this.alias = alias;
+
         this.puntaje = puntaje;
-        this.puntaje2 = puntaje2;
+
         this.tema = tema;
-        this.tema2 = tema2;
+
     }
 
     public String getNombre() {
@@ -29,12 +33,12 @@ public class Jugador {
         this.nombre = nombre;
     }
 
-    public String getNombre2() {
-        return nombre2;
+    public String getAlias() {
+        return alias;
     }
 
-    public void setNombre2(String nombre2) {
-        this.nombre2 = nombre2;
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 
     public int getPuntaje() {
@@ -45,39 +49,12 @@ public class Jugador {
         this.puntaje = puntaje;
     }
 
-    public int getPuntaje2() {
-        return puntaje2;
-    }
-
-    public void setPuntaje2(int puntaje2) {
-        this.puntaje2 = puntaje2;
-    }
-
-    public String getTema() {
+    public int getTema() {
         return tema;
     }
 
-    public void setTema(String tema) {
+    public void setTema(int tema) {
         this.tema = tema;
     }
-
-    public String getTema2() {
-        return tema2;
-    }
-
-    public void setTema2(String tema2) {
-        this.tema2 = tema2;
-    }
-
-
-  
-    
-    
-    
-    
-    
-    
-    
-    
 
 }

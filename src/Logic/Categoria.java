@@ -1,6 +1,7 @@
 
 package Logic;
-
+ 
+//hola
 
 public class Categoria {
 String  codigo;

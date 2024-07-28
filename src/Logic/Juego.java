@@ -572,5 +572,5 @@ public class Juego {
         preguntas[7][4] = VJpregunta5;
 
     }
-
+     
 }

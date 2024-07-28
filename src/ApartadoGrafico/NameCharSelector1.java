@@ -1,46 +1,15 @@
 package ApartadoGrafico;
 
+import Logic.Jugador;
 import javax.swing.ImageIcon;
-import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
 public class NameCharSelector1 extends javax.swing.JFrame {
 
     int posicion = 0;
 
-    String categoria = "";
-    int cat = 0;
-    
-    String nombre1 = "";
-    String alias1 = "";
-
-    public JComboBox<String> getCbThemesP1() {
-        return cbThemesP1;
-    }
-
-    public int getCat() {
-        return cat;
-    }
-
-    public String getNombre1() {
-        return nombre1;
-    }
-
-    public String getAlias1() {
-        return alias1;
-    }
-
-    public int getPosicion() {
-        return posicion;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
     public NameCharSelector1() {
         initComponents();
-
         this.setLocationRelativeTo(null);
     }
 
@@ -171,24 +140,62 @@ public class NameCharSelector1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarP1ActionPerformed
 
     private void txtNombreP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreP1ActionPerformed
-        
+
     }//GEN-LAST:event_txtNombreP1ActionPerformed
 
     private void btnListoP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListoP1ActionPerformed
 
         if (txtGamerTag.getText().isEmpty() || txtNombreP1.getText().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Favor rellenar los valores");
-        }else{
+        } else {
             NameCharSelector2 selector2 = new NameCharSelector2();
-        selector2.setVisible(true);
-        selector2.setLocationRelativeTo(null);
-        this.dispose();
+            selector2.setVisible(true);
+            selector2.setLocationRelativeTo(null);
+            this.dispose();
+
+            String categoria = cbThemesP1.getSelectedItem().toString();
+           
+
+            switch (categoria) {
+                case "Series y Peliculas":
+                    posicion = 0;
+                    break;
+                case "Eventos Históricos":
+                    posicion = 1;
+                    break;
+
+                case "Tecnologia":
+                    posicion = 2;
+                    break;
+
+                case "Deporte":
+                    posicion = 3;
+                    break;
+
+                case "Ciencia":
+                    posicion = 4;
+                    break;
+
+                case "Arte":
+                    posicion = 5;
+                    break;
+
+                case "Geografía":
+                    posicion = 6;
+                    break;
+                case "VideoJuegos":
+                    posicion = 7;
+                    break;
+            }
+
+            String Nombre = txtNombreP1.getText().toString();
+            int Tema = posicion;
+            String Alias = txtGamerTag.getText().toString();
+
+            Jugador j1 = new Jugador(Nombre, Alias, 0, Tema);
+
         }
-            
 
-        
-
-        
         /*categoria = cbThemesP1.getSelectedItem().toString();
         cat = (int) cbThemesP1.getSelectedItem();
         /*Series y Películas
@@ -198,71 +205,8 @@ public class NameCharSelector1 extends javax.swing.JFrame {
         Ciencia
         Arte
         Geografía
-        VideoJuegos
+        VideoJuegos*/
 
-        switch (categoria) {
-            case "Series y Peliculas":
-                posicion = 0;
-                break;
-            case "Eventos Históricos":
-                posicion = 1;
-                break;
-
-            case "Tecnologia":
-                posicion = 2;
-                break;
-
-            case "Deporte":
-                posicion = 3;
-                break;
-
-            case "Ciencia":
-                posicion = 4;
-                break;
-
-            case "Arte":
-                posicion = 5;
-                break;
-
-            case "Geografía":
-                posicion = 6;
-                break;
-            case "VideoJuegos":
-                posicion = 7;
-                break;
-        }
-        nombre1 = txtNombreP1.getText().toString();
-        alias1 = txtGamerTag.getText().toString();*/
-
-        
-        
-        
-        
-        
-        
-     
-        
-        
-        
-        
-        
-//comboBox.getItemAt(1).setEnabled(false); // Deshabilita la segunda opción
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }//GEN-LAST:event_btnListoP1ActionPerformed
 
     private void cbThemesP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbThemesP1ActionPerformed

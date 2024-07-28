@@ -28,7 +28,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jpSelector2" pref="707" max="32767" attributes="0"/>
+              <Component id="jpSelector2" pref="701" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -57,11 +57,11 @@
                       <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jlbName2" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="txtNombreP2" alignment="0" pref="200" max="32767" attributes="0"/>
-                          <Component id="txtNombreP3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtgamertagp2" alignment="0" pref="200" max="32767" attributes="0"/>
+                          <Component id="txtNombrep2" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="395" max="32767" attributes="0"/>
+                  <EmptySpace pref="389" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
@@ -79,11 +79,11 @@
                   <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="jlbName2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtNombreP3" min="-2" pref="43" max="-2" attributes="0"/>
+                  <Component id="txtNombrep2" min="-2" pref="43" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jlbName3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtNombreP2" min="-2" pref="43" max="-2" attributes="0"/>
+                  <Component id="txtgamertagp2" min="-2" pref="43" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -136,9 +136,9 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelarP2ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombreP2">
+        <Component class="javax.swing.JTextField" name="txtgamertagp2">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreP2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtgamertagp2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jlbName2">
@@ -151,9 +151,9 @@
             <Property name="text" type="java.lang.String" value="Selecciona tu tema"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombreP3">
+        <Component class="javax.swing.JTextField" name="txtNombrep2">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreP3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombrep2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jlbName3">
