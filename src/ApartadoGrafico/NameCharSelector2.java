@@ -14,7 +14,7 @@ public class NameCharSelector2 extends javax.swing.JFrame {
     public NameCharSelector2(Jugador j1, int posicion1) {
         this.j1 = j1;
         this.posicion1 = posicion1;
-        
+
         this.setLocationRelativeTo(null);
         initComponents();
     }
@@ -25,8 +25,6 @@ public class NameCharSelector2 extends javax.swing.JFrame {
 
         jpSelector1 = new javax.swing.JPanel();
         cbThemesP1 = new javax.swing.JComboBox<>();
-        btnListoP1 = new javax.swing.JButton();
-        btnCancelarP1 = new javax.swing.JButton();
         txtNombreP1 = new javax.swing.JTextField();
         jlbTema = new javax.swing.JLabel();
         txtGamerTag = new javax.swing.JTextField();
@@ -82,6 +80,8 @@ public class NameCharSelector2 extends javax.swing.JFrame {
         lblSeleccionadaNombre = new javax.swing.JLabel();
         lblSeleccionadaAlias = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        btnListoP1 = new javax.swing.JButton();
+        btnCancelarP1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("GotThatTrivia");
@@ -101,26 +101,6 @@ public class NameCharSelector2 extends javax.swing.JFrame {
         cbThemesP1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbThemesP1ActionPerformed(evt);
-            }
-        });
-
-        btnListoP1.setBackground(new java.awt.Color(0, 0, 0));
-        btnListoP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
-        btnListoP1.setForeground(new java.awt.Color(255, 255, 255));
-        btnListoP1.setText("Listo");
-        btnListoP1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListoP1ActionPerformed(evt);
-            }
-        });
-
-        btnCancelarP1.setBackground(new java.awt.Color(0, 0, 0));
-        btnCancelarP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
-        btnCancelarP1.setForeground(new java.awt.Color(255, 255, 255));
-        btnCancelarP1.setText("Cancelar");
-        btnCancelarP1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelarP1ActionPerformed(evt);
             }
         });
 
@@ -826,15 +806,34 @@ public class NameCharSelector2 extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/textoNameSelector.png"))); // NOI18N
 
+        btnListoP1.setBackground(new java.awt.Color(0, 0, 0));
+        btnListoP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 24)); // NOI18N
+        btnListoP1.setForeground(new java.awt.Color(255, 255, 255));
+        btnListoP1.setText("Listo");
+        btnListoP1.setBorder(null);
+        btnListoP1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListoP1ActionPerformed(evt);
+            }
+        });
+
+        btnCancelarP1.setBackground(new java.awt.Color(0, 0, 0));
+        btnCancelarP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        btnCancelarP1.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancelarP1.setText("Cancelar");
+        btnCancelarP1.setBorder(null);
+        btnCancelarP1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarP1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jpSelector1Layout = new javax.swing.GroupLayout(jpSelector1);
         jpSelector1.setLayout(jpSelector1Layout);
         jpSelector1Layout.setHorizontalGroup(
             jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpSelector1Layout.createSequentialGroup()
                 .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpSelector1Layout.createSequentialGroup()
-                        .addGap(743, 743, 743)
-                        .addComponent(btntAlternarOpcion))
                     .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jpSelector1Layout.createSequentialGroup()
                             .addGap(59, 59, 59)
@@ -859,15 +858,15 @@ public class NameCharSelector2 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpSelector1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(cbThemesP1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpSelector1Layout.createSequentialGroup()
+                        .addComponent(btnListoP1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCancelarP1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpSelector1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(cbThemesP1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jpTeclado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jpSelector1Layout.createSequentialGroup()
-                            .addGap(105, 105, 105)
-                            .addComponent(btnListoP1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(153, 153, 153)
-                            .addComponent(btnCancelarP1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(btntAlternarOpcion)))
                 .addGap(71, 71, 71))
         );
         jpSelector1Layout.setVerticalGroup(
@@ -928,82 +927,6 @@ public class NameCharSelector2 extends javax.swing.JFrame {
     private void cbThemesP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbThemesP1ActionPerformed
 
     }//GEN-LAST:event_cbThemesP1ActionPerformed
-
-    private void btnListoP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListoP1ActionPerformed
-
-        if (txtGamerTag.getText().isEmpty() || txtNombreP1.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Favor rellenar los valores");
-        } else {
-
-            String categoria = cbThemesP1.getSelectedItem().toString();
-
-            switch (categoria) {
-                case "Series y Peliculas":
-                    posicion2 = 0;
-                    break;
-                case "Eventos Históricos":
-                    posicion2 = 1;
-                    break;
-
-                case "Tecnologia":
-                    posicion2 = 2;
-                    break;
-
-                case "Deporte":
-                    posicion2 = 3;
-                    break;
-
-                case "Ciencia":
-                    posicion2 = 4;
-                    break;
-
-                case "Arte":
-                    posicion2 = 5;
-                    break;
-
-                case "Geografía":
-                    posicion2 = 6;
-                    break;
-                case "VideoJuegos":
-                    posicion2 = 7;
-                    break;
-            }
-
-            String Nombre = txtNombreP1.getText().toString();
-            int Tema = posicion2;
-            String Alias = txtGamerTag.getText().toString();
-
-            Jugador j2 = new Jugador(Nombre, Alias, 0, Tema);
-
-            empezar em = new empezar(j1, j2, posicion1, posicion2);
-
-            em.setVisible(true);
-            em.setLocationRelativeTo(null);
-
-            this.dispose();
-
-        }
-
-
-        /*categoria = cbThemesP1.getSelectedItem().toString();
-        cat = (int) cbThemesP1.getSelectedItem();
-        /*Series y Películas
-        Eventos Históricos
-        Tecnologia
-        Deporte
-        Ciencia
-        Arte
-        Geografía
-        VideoJuegos*/
-    }//GEN-LAST:event_btnListoP1ActionPerformed
-
-    private void btnCancelarP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarP1ActionPerformed
-        jfMenuPrincipal mp = new jfMenuPrincipal();
-
-        mp.setVisible(true);
-        mp.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_btnCancelarP1ActionPerformed
 
     private void txtNombreP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreP1ActionPerformed
 
@@ -1495,6 +1418,82 @@ public class NameCharSelector2 extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_btntAlternarOpcionActionPerformed
+
+    private void btnListoP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListoP1ActionPerformed
+
+        if (txtGamerTag.getText().isEmpty() || txtNombreP1.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Favor rellenar los valores");
+        } else {
+
+            String categoria = cbThemesP1.getSelectedItem().toString();
+
+            switch (categoria) {
+                case "Series y Peliculas":
+                    posicion2 = 0;
+                    break;
+                case "Eventos Históricos":
+                    posicion2 = 1;
+                    break;
+
+                case "Tecnologia":
+                    posicion2 = 2;
+                    break;
+
+                case "Deporte":
+                    posicion2 = 3;
+                    break;
+
+                case "Ciencia":
+                    posicion2 = 4;
+                    break;
+
+                case "Arte":
+                    posicion2 = 5;
+                    break;
+
+                case "Geografía":
+                    posicion2 = 6;
+                    break;
+                case "VideoJuegos":
+                    posicion2 = 7;
+                    break;
+            }
+
+            String Nombre = txtNombreP1.getText().toString();
+            int Tema = posicion2;
+            String Alias = txtGamerTag.getText().toString();
+
+            Jugador j2 = new Jugador(Nombre, Alias, 0, Tema);
+
+            empezar em = new empezar(j1, j2, posicion1, posicion2);
+
+            em.setVisible(true);
+            em.setLocationRelativeTo(null);
+
+            this.dispose();
+
+        }
+
+
+        /*categoria = cbThemesP1.getSelectedItem().toString();
+        cat = (int) cbThemesP1.getSelectedItem();
+        /*Series y Películas
+        Eventos Históricos
+        Tecnologia
+        Deporte
+        Ciencia
+        Arte
+        Geografía
+        VideoJuegos*/
+    }//GEN-LAST:event_btnListoP1ActionPerformed
+
+    private void btnCancelarP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarP1ActionPerformed
+        jfMenuPrincipal mp = new jfMenuPrincipal();
+
+        mp.setVisible(true);
+        mp.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarP1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
