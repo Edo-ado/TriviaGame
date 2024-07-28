@@ -1,4 +1,3 @@
-
 package ApartadoGrafico;
 
 import java.io.File;
@@ -12,7 +11,6 @@ public class TablaPosiciones extends javax.swing.JFrame {
         initComponents();
     }
 
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -79,30 +77,17 @@ public class TablaPosiciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnActualizatablaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizatablaActionPerformed
-     
-        
-        
-        
-        
-        
+
         //tostring
-        
+
     }//GEN-LAST:event_btnActualizatablaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     
-        jfMenuPrincipal mp = new jfMenuPrincipal();
-        
+        this.dispose();
 
-       
-        this.setLocationRelativeTo(null);
-        
-        
-      
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
-
-  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActualizatabla;

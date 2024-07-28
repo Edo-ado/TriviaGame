@@ -145,16 +145,16 @@ public class NameCharSelector2 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtgamertagp2ActionPerformed
 
     private void btnListoP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListoP1ActionPerformed
-        PanelPreguntas pp = new PanelPreguntas();
-        NameCharSelector1 nam1 = new NameCharSelector1();
+        
 
         if (txtgamertagp2.getText().isEmpty() || txtNombrep2.getText().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Favor rellenar los valores");
         } else {
-            PanelPreguntas pan = new PanelPreguntas();
+            empezar em = new empezar();
             
-            pan.setVisible(true);
-            pan.setLocationRelativeTo(null);
+            em.setVisible(true);
+            em.setLocationRelativeTo(null);
+            
             this.dispose();
 
            String categoria = cbThemesP2.getSelectedItem().toString();
@@ -198,7 +198,11 @@ public class NameCharSelector2 extends javax.swing.JFrame {
             int Tema = posicion;
             String Alias = txtgamertagp2.getText().toString();
 
-            Jugador j1 = new Jugador(Nombre, Alias, 0, Tema);
+            Jugador j2 = new Jugador(Nombre, Alias, 0, Tema);
+            
+            
+            
+            
 
         }
 
