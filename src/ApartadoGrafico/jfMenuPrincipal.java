@@ -177,7 +177,7 @@ public class jfMenuPrincipal extends javax.swing.JFrame {
 
     private void btnVolverBienvenidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverBienvenidaActionPerformed
         PrincipalJForm ap = new PrincipalJForm();
-
+        ap.setSize(909, 780);
         ap.setVisible(true);
         ap.setLocationRelativeTo(null);
         this.dispose();
@@ -190,7 +190,7 @@ public class jfMenuPrincipal extends javax.swing.JFrame {
         selectorP1.setLocationRelativeTo(null);
         this.dispose();
         selectorP1.lblSeleccionadaAlias.setVisible(false);;
-     
+
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void btnInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInformacionActionPerformed

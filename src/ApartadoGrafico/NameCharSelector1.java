@@ -11,8 +11,7 @@ public class NameCharSelector1 extends javax.swing.JFrame {
     public static Jugador j1;
 
     public NameCharSelector1() {
-        
-        
+
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -1039,10 +1038,7 @@ public class NameCharSelector1 extends javax.swing.JFrame {
             txtGamerTag.setEnabled(false);
             btnB.setEnabled(true);
             btntAlternarOpcion.setVisible(true);
-            
-            
-            
-            
+
         }
 
     }//GEN-LAST:event_btnAlternarTecladoActionPerformed
@@ -1512,10 +1508,10 @@ public class NameCharSelector1 extends javax.swing.JFrame {
             lblSeleccionadaAlias.setVisible(true);
         }
         if (btntAlternarOpcion.isSelected() == false) {
-             lblSeleccionadaNombre.setVisible(true);
+            lblSeleccionadaNombre.setVisible(true);
             lblSeleccionadaAlias.setVisible(false);
         }
-        
+
     }//GEN-LAST:event_btntAlternarOpcionActionPerformed
 
 
@@ -1536,7 +1532,7 @@ public class NameCharSelector1 extends javax.swing.JFrame {
     private javax.swing.JButton btnA11;
     private javax.swing.JButton btnAND;
     private javax.swing.JButton btnAPOSTROFE;
-    private javax.swing.JToggleButton btnAlternarTeclado;
+    public javax.swing.JToggleButton btnAlternarTeclado;
     private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnB;
     private javax.swing.JButton btnC;

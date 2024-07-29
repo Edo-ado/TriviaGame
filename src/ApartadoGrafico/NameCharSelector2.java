@@ -1388,6 +1388,7 @@ public class NameCharSelector2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void btnAlternarTecladoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlternarTecladoActionPerformed
+
         if (btnAlternarTeclado.isSelected()) {
             txtNombreP1.setEnabled(true);
             txtGamerTag.setEnabled(true);
