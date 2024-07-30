@@ -37,7 +37,7 @@ public class PrincipalJForm extends javax.swing.JFrame {
         setLocation(new java.awt.Point(0, 0));
         setName("frBienvenida"); // NOI18N
         setUndecorated(true);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnIniciarBienvenida.setBackground(new java.awt.Color(255, 188, 180));
         btnIniciarBienvenida.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
@@ -49,8 +49,7 @@ public class PrincipalJForm extends javax.swing.JFrame {
                 btnIniciarBienvenidaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnIniciarBienvenida);
-        btnIniciarBienvenida.setBounds(240, 450, 440, 60);
+        getContentPane().add(btnIniciarBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 440, 60));
 
         btnSalirBienvenida.setBackground(new java.awt.Color(255, 188, 180));
         btnSalirBienvenida.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
@@ -61,13 +60,11 @@ public class PrincipalJForm extends javax.swing.JFrame {
                 btnSalirBienvenidaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalirBienvenida);
-        btnSalirBienvenida.setBounds(410, 550, 80, 30);
+        getContentPane().add(btnSalirBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, 80, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/imgArreglada.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/FondoInicio.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 6));
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 910, 780);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 780));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

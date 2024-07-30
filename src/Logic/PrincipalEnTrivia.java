@@ -10,14 +10,11 @@ public class PrincipalEnTrivia {
 
 
 
-        //ventana calificacion
-        tp.setVisible(true);
-        
-        tp.setLocationRelativeTo(null);
 
+        
         //Ventana de bienvenida
         ap.setVisible(true);
-        ap.setSize(909, 780);
+        
         ap.setLocationRelativeTo(null);
         
 

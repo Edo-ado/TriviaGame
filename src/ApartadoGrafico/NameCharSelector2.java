@@ -85,7 +85,6 @@ public class NameCharSelector2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("GotThatTrivia");
-        setMaximumSize(new java.awt.Dimension(1044, 793));
         setMinimumSize(new java.awt.Dimension(1044, 793));
         setUndecorated(true);
         setResizable(false);
@@ -798,13 +797,13 @@ public class NameCharSelector2 extends javax.swing.JFrame {
         });
 
         lblSeleccionadaNombre.setForeground(new java.awt.Color(255, 0, 0));
-        lblSeleccionadaNombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/link final.gif"))); // NOI18N
+        lblSeleccionadaNombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/LinkAnimado 2.gif"))); // NOI18N
 
         lblSeleccionadaAlias.setBackground(new java.awt.Color(0, 0, 0));
         lblSeleccionadaAlias.setForeground(new java.awt.Color(0, 0, 0));
-        lblSeleccionadaAlias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/link final.gif"))); // NOI18N
+        lblSeleccionadaAlias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/LinkAnimado 2.gif"))); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/textoNameSelector.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/TextodelSelector.png"))); // NOI18N
 
         btnListoP1.setBackground(new java.awt.Color(0, 0, 0));
         btnListoP1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 24)); // NOI18N
@@ -1468,24 +1467,33 @@ public class NameCharSelector2 extends javax.swing.JFrame {
 
             empezar em = new empezar(j1, j2, posicion1, posicion2);
 
+            //Asginar los temas en el campo de empezar
+            
+            //Nombres de los campos
+            
+            em.lblNombrechar1.setText(Nombre.toString());
+            em.lblNombreChar2.setText(j2.getNombre().toString());
+            
+            //alias de los campos
+            em.lblAliaschar1.setText(Alias);
+            em.lblAliaschar2.setText(j2.getAlias().toString());
+            
+            //Tema Seleccionado
+            
+            em.lblTextoDelTemachar2.setText(categoria.toString());
+            
             em.setVisible(true);
             em.setLocationRelativeTo(null);
 
             this.dispose();
 
+            
+            
+            
         }
 
 
-        /*categoria = cbThemesP1.getSelectedItem().toString();
-        cat = (int) cbThemesP1.getSelectedItem();
-        /*Series y Películas
-        Eventos Históricos
-        Tecnologia
-        Deporte
-        Ciencia
-        Arte
-        Geografía
-        VideoJuegos*/
+        
     }//GEN-LAST:event_btnListoP1ActionPerformed
 
     private void btnCancelarP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarP1ActionPerformed

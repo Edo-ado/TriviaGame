@@ -29,65 +29,35 @@ public class Informacion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtaInformacion = new javax.swing.JTextArea();
         btnSalirInformacion = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("GotThatTrivia");
+        setBackground(new java.awt.Color(0, 0, 0));
+        setUndecorated(true);
+        setResizable(false);
+        setSize(new java.awt.Dimension(552, 635));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtaInformacion.setEditable(false);
-        txtaInformacion.setColumns(20);
-        txtaInformacion.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
-        txtaInformacion.setRows(5);
-        txtaInformacion.setText("Creador: Eduardo Ulloa Murillo\n\nCorreo: edu18088@gmail.com\nTelefono: (+506)85772517\nCedula: 208650437\n\n\n\n\nUniversidad Tecnica Nacional\n\nCarrera: Ingenieria del Software\nClase: Programacion I\nSegundo Cuatrimestre\n\nAño: 2024\n\n\n\nNombre del Juego: GotThatTrivia\n\n\n");
-        txtaInformacion.setToolTipText("");
-        txtaInformacion.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        txtaInformacion.setEnabled(false);
-        jScrollPane1.setViewportView(txtaInformacion);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        btnSalirInformacion.setText("Volver");
+        btnSalirInformacion.setBackground(new java.awt.Color(0, 0, 0));
+        btnSalirInformacion.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalirInformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Botones/BotonVolverInfoArr.png"))); // NOI18N
+        btnSalirInformacion.setBorder(null);
         btnSalirInformacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirInformacionActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSalirInformacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 570, 210, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSalirInformacion)
-                .addGap(46, 46, 46))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(btnSalirInformacion)
-                .addGap(0, 49, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/PanelInformacion.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 310, 500));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/FondoInformacion .png"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51), 3));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -99,8 +69,7 @@ public class Informacion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSalirInformacion;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea txtaInformacion;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

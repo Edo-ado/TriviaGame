@@ -826,13 +826,13 @@ public class NameCharSelector1 extends javax.swing.JFrame {
         });
 
         lblSeleccionadaNombre.setForeground(new java.awt.Color(255, 0, 0));
-        lblSeleccionadaNombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/link final.gif"))); // NOI18N
+        lblSeleccionadaNombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/LinkAnimado.gif"))); // NOI18N
 
         lblSeleccionadaAlias.setBackground(new java.awt.Color(0, 0, 0));
         lblSeleccionadaAlias.setForeground(new java.awt.Color(0, 0, 0));
-        lblSeleccionadaAlias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/link final.gif"))); // NOI18N
+        lblSeleccionadaAlias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/LinkAnimado.gif"))); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/textoNameSelector.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/TextodelSelector.png"))); // NOI18N
 
         javax.swing.GroupLayout jpSelector1Layout = new javax.swing.GroupLayout(jpSelector1);
         jpSelector1.setLayout(jpSelector1Layout);
