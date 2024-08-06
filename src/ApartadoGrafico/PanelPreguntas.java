@@ -67,7 +67,7 @@ public class PanelPreguntas extends javax.swing.JFrame {
         });
         jPanel1.add(btnRespuesta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 320, 240, 57));
 
-        lblNombre.setText("//Juagads");
+        lblNombre.setText("//Nombre");
         jPanel1.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(648, 11, 104, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

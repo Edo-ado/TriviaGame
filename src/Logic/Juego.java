@@ -574,6 +574,12 @@ public class Juego {
     }
     
     
+    
+    
+    
+    
+    //Seleccion del modo
+    
     //sumar puntos
     //ordenar resultados
     // mostrar ganador

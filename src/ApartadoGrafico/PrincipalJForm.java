@@ -27,7 +27,6 @@ public class PrincipalJForm extends javax.swing.JFrame {
 
         btnIniciarBienvenida = new javax.swing.JButton();
         btnSalirBienvenida = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("GotThatTrivia");
@@ -49,7 +48,7 @@ public class PrincipalJForm extends javax.swing.JFrame {
                 btnIniciarBienvenidaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnIniciarBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 440, 60));
+        getContentPane().add(btnIniciarBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 470, 60));
 
         btnSalirBienvenida.setBackground(new java.awt.Color(255, 188, 180));
         btnSalirBienvenida.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
@@ -60,11 +59,7 @@ public class PrincipalJForm extends javax.swing.JFrame {
                 btnSalirBienvenidaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalirBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, 80, 30));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/FondoInicio.png"))); // NOI18N
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 6));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 780));
+        getContentPane().add(btnSalirBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 700, 80, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -87,6 +82,5 @@ public class PrincipalJForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIniciarBienvenida;
     private javax.swing.JButton btnSalirBienvenida;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

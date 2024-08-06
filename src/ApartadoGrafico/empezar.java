@@ -43,26 +43,31 @@ public class empezar extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnStart.setText("¿Empezar?");
+        btnStart.setBackground(new java.awt.Color(0, 0, 0));
+        btnStart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Botones/BotonEmpezarStart.png"))); // NOI18N
+        btnStart.setBorder(null);
         btnStart.setEnabled(false);
         btnStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnStartActionPerformed(evt);
             }
         });
-        getContentPane().add(btnStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 210, 70));
+        getContentPane().add(btnStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 190, 80));
+        btnStart.getAccessibleContext().setAccessibleDescription("");
 
         LinkEspadaChar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/LinkEspada.png"))); // NOI18N
         getContentPane().add(LinkEspadaChar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         LinkEspadachar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGfondos/LinkEspada2.png"))); // NOI18N
-        getContentPane().add(LinkEspadachar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, -1, -1));
+        getContentPane().add(LinkEspadachar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 300, 210, -1));
 
-        jpChar1Panel.setBackground(new java.awt.Color(51, 51, 51));
+        jpChar1Panel.setBackground(new java.awt.Color(0, 0, 0));
         jpChar1Panel.setPreferredSize(new java.awt.Dimension(210, 208));
 
-        btnListo1.setBackground(new java.awt.Color(255, 0, 0));
+        btnListo1.setBackground(new java.awt.Color(0, 0, 0));
+        btnListo1.setForeground(new java.awt.Color(255, 255, 255));
         btnListo1.setText("Listo");
+        btnListo1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 255), 3));
         btnListo1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListo1ActionPerformed(evt);
@@ -90,36 +95,33 @@ public class empezar extends javax.swing.JFrame {
                         .addGap(47, 47, 47)
                         .addComponent(btnListo1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jpChar1PanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblNombrechar1))
-                    .addGroup(jpChar1PanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblAliaschar1))
-                    .addGroup(jpChar1PanelLayout.createSequentialGroup()
                         .addGap(64, 64, 64)
-                        .addComponent(lblTextoDelTemachar1)))
+                        .addComponent(lblTextoDelTemachar1))
+                    .addComponent(lblNombrechar1)
+                    .addComponent(lblAliaschar1))
                 .addContainerGap(47, Short.MAX_VALUE))
         );
         jpChar1PanelLayout.setVerticalGroup(
             jpChar1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpChar1PanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(lblNombrechar1)
-                .addGap(31, 31, 31)
+                .addGap(34, 34, 34)
                 .addComponent(lblAliaschar1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addComponent(lblTextoDelTemachar1)
-                .addGap(18, 18, 18)
-                .addComponent(btnListo1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnListo1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         getContentPane().add(jpChar1Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
 
-        jpChar1Panel1.setBackground(new java.awt.Color(51, 51, 51));
+        jpChar1Panel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        btnListo2.setBackground(new java.awt.Color(255, 0, 0));
+        btnListo2.setBackground(new java.awt.Color(0, 0, 0));
+        btnListo2.setForeground(new java.awt.Color(255, 255, 255));
         btnListo2.setText("Listo");
+        btnListo2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 255), 3));
         btnListo2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListo2ActionPerformed(evt);
@@ -141,6 +143,10 @@ public class empezar extends javax.swing.JFrame {
         jpChar1Panel1.setLayout(jpChar1Panel1Layout);
         jpChar1Panel1Layout.setHorizontalGroup(
             jpChar1Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpChar1Panel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblTextoDelTemachar2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65))
             .addGroup(jpChar1Panel1Layout.createSequentialGroup()
                 .addGroup(jpChar1Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpChar1Panel1Layout.createSequentialGroup()
@@ -151,24 +157,19 @@ public class empezar extends javax.swing.JFrame {
                         .addComponent(lblNombreChar2))
                     .addGroup(jpChar1Panel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblAliaschar2))
-                    .addGroup(jpChar1Panel1Layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(lblTextoDelTemachar2)))
+                        .addComponent(lblAliaschar2)))
                 .addContainerGap(47, Short.MAX_VALUE))
         );
         jpChar1Panel1Layout.setVerticalGroup(
             jpChar1Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpChar1Panel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(lblNombreChar2)
-                .addGap(31, 31, 31)
+                .addGap(34, 34, 34)
                 .addComponent(lblAliaschar2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
-                .addComponent(lblTextoDelTemachar2)
-                .addGap(18, 18, 18)
-                .addComponent(btnListo2)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addComponent(lblTextoDelTemachar2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnListo2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(jpChar1Panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, -1, -1));
@@ -199,6 +200,7 @@ public class empezar extends javax.swing.JFrame {
     private void btnListo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListo1ActionPerformed
 
         if (btnListo1.isSelected()) {
+            
             if (btnListo2.isSelected()) {
                 btnStart.setEnabled(true);
             }

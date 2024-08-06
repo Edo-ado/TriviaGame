@@ -1459,6 +1459,7 @@ public class NameCharSelector2 extends javax.swing.JFrame {
                     break;
             }
 
+            
             String Nombre = txtNombreP1.getText().toString();
             int Tema = posicion2;
             String Alias = txtGamerTag.getText().toString();
